@@ -30,3 +30,9 @@ end
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
 gem 'cpc', :git => 'https://github.com/clockworkpc/cpc-ruby.git'
+
+group :development do
+  gem 'guard', require: false
+  gem 'guard-rubocop'
+  gem 'guard-rspec'
+end
